@@ -1,0 +1,1110 @@
+2020-09-03 05:39:20 Error: [Cake\Controller\Exception\MissingActionException] Action BookmarksController::tags() could not be found, or is not accessible. (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'BookmarksController',
+  'action' => 'tags',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BookmarksController))
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+Request URL: /bookmarks/tagged
+
+
+2020-09-03 05:40:41 Error: [BadMethodCallException] Unknown finder method "tagged" (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/ORM/Table.php:2565)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/ORM/Table.php(1371): Cake\ORM\Table->callFinder('tagged', Object(Cake\ORM\Query), Array)
+#1 /Users/hukagawa/bookmarker/src/Controller/BookmarksController.php(122): Cake\ORM\Table->find('tagged', Array)
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(606): App\Controller\BookmarksController->tags()
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BookmarksController))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#18 {main}
+Request URL: /bookmarks/tagged
+
+
+2020-09-03 05:41:34 Error: [BadMethodCallException] Unknown finder method "tagged" (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/ORM/Table.php:2565)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/ORM/Table.php(1371): Cake\ORM\Table->callFinder('tagged', Object(Cake\ORM\Query), Array)
+#1 /Users/hukagawa/bookmarker/src/Controller/BookmarksController.php(122): Cake\ORM\Table->find('tagged', Array)
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(606): App\Controller\BookmarksController->tags('1')
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BookmarksController))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#18 {main}
+Request URL: /bookmarks/tagged/1
+
+
+2020-09-03 05:42:31 Error: [BadMethodCallException] Unknown finder method "tagged" (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/ORM/Table.php:2565)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/ORM/Table.php(1371): Cake\ORM\Table->callFinder('tagged', Object(Cake\ORM\Query), Array)
+#1 /Users/hukagawa/bookmarker/src/Controller/BookmarksController.php(122): Cake\ORM\Table->find('tagged', Array)
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(606): App\Controller\BookmarksController->tags()
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BookmarksController))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#18 {main}
+Request URL: /bookmarks/tagged
+
+
+2020-09-03 05:42:49 Error: [BadMethodCallException] Unknown finder method "tagged" (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/ORM/Table.php:2565)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/ORM/Table.php(1371): Cake\ORM\Table->callFinder('tagged', Object(Cake\ORM\Query), Array)
+#1 /Users/hukagawa/bookmarker/src/Controller/BookmarksController.php(122): Cake\ORM\Table->find('tagged', Array)
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(606): App\Controller\BookmarksController->tags('\xE5\xB0\x8F\xE8\xAA\xAC')
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BookmarksController))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#18 {main}
+Request URL: /bookmarks/tagged/小説
+
+
+2020-09-03 05:44:47 Error: [Cake\View\Exception\MissingTemplateException] Template file "Bookmarks/tags.ctp" is missing. (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/View/View.php:1605)
+Exception Attributes: array (
+  'file' => 'Bookmarks/tags.ctp',
+)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/View/View.php(888): Cake\View\View->_getViewFileName('Bookmarks/tags')
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(791): Cake\View\View->render(NULL, NULL)
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BookmarksController))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(164): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /bookmarks/tagged
+
+
+2020-09-03 06:05:48 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::logout() could not be found, or is not accessible. (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/logout
+
+
+2020-09-03 06:06:58 Error: Fatal Error (256): [Error] Class 'App\Controller\AppController' not found (/Users/hukagawa/bookmarker/src/Controller/ErrorController.php:24)
+#0 /Users/hukagawa/bookmarker/vendor/composer/ClassLoader.php(444): include()
+#1 /Users/hukagawa/bookmarker/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/Users/hukagawa...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#3 [internal function]: spl_autoload_call('App\\Controller\\...')
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Core/App.php(63): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(159): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(101): Cake\Error\ExceptionRenderer->_getController()
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\PHP7ErrorException))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(202): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\PHP7ErrorException))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(186): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#11 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#12 {main} in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 181]
+
+
+2020-09-03 06:06:58 Error: Fatal Error (256): [Error] Class 'App\Controller\AppController' not found (/Users/hukagawa/bookmarker/src/Controller/ErrorController.php:24)
+#0 /Users/hukagawa/bookmarker/vendor/composer/ClassLoader.php(444): include()
+#1 /Users/hukagawa/bookmarker/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/Users/hukagawa...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#3 [internal function]: spl_autoload_call('App\\Controller\\...')
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Core/App.php(151): class_exists('App\\Controller\\...')
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Core/App.php(63): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(159): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(101): Cake\Error\ExceptionRenderer->_getController()
+#8 /U in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 181]
+
+
+2020-09-03 06:41:35 Error: [Cake\Controller\Exception\MissingActionException] Action BookmarksController::logout() could not be found, or is not accessible. (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'BookmarksController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BookmarksController))
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /bookmarks/logout
+
+
+2020-09-03 06:41:39 Error: [Cake\Controller\Exception\MissingActionException] Action BookmarksController::logout() could not be found, or is not accessible. (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'BookmarksController',
+  'action' => 'logout',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BookmarksController))
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /bookmarks/logout
+
+
+2020-09-03 06:43:35 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::edit1() could not be found, or is not accessible. (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'edit1',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/edit1
+
+
+2020-09-03 06:46:13 Error: [Error] Call to a member function allow() on bool (/Users/hukagawa/bookmarker/src/Controller/AppController.php:30)
+#0 /Users/hukagawa/bookmarker/src/Controller/UsersController.php(119): App\Controller\AppController->initialize()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(270): App\Controller\UsersController->initialize()
+#2 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(47): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#22 {main}
+Request URL: /users/edit1
+
+
+2020-09-03 06:46:13 Warning: Warning (512): Unable to emit headers. Headers sent in file=/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /users/edit1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /users/edit1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /users/edit1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /users/edit1
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:20 Error: [Error] Call to a member function allow() on bool (/Users/hukagawa/bookmarker/src/Controller/AppController.php:30)
+#0 /Users/hukagawa/bookmarker/src/Controller/UsersController.php(119): App\Controller\AppController->initialize()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(270): App\Controller\UsersController->initialize()
+#2 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(47): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#22 {main}
+Request URL: /users
+
+
+2020-09-03 06:46:20 Warning: Warning (512): Unable to emit headers. Headers sent in file=/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:20 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:33 Error: [Error] Call to a member function allow() on bool (/Users/hukagawa/bookmarker/src/Controller/AppController.php:30)
+#0 /Users/hukagawa/bookmarker/src/Controller/UsersController.php(119): App\Controller\AppController->initialize()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(270): App\Controller\UsersController->initialize()
+#2 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(47): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#22 {main}
+Request URL: /users/edit
+
+
+2020-09-03 06:46:33 Warning: Warning (512): Unable to emit headers. Headers sent in file=/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /users/edit
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /users/edit
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /users/edit
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:33 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /users/edit
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:43 Error: [Error] Call to a member function allow() on bool (/Users/hukagawa/bookmarker/src/Controller/AppController.php:30)
+#0 /Users/hukagawa/bookmarker/src/Controller/UsersController.php(119): App\Controller\AppController->initialize()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(270): App\Controller\UsersController->initialize()
+#2 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(47): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#22 {main}
+Request URL: /users/edit
+
+
+2020-09-03 06:46:43 Warning: Warning (512): Unable to emit headers. Headers sent in file=/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /users/edit
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:43 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /users/edit
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:43 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /users/edit
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:43 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /users/edit
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:50 Error: [Error] Call to a member function allow() on bool (/Users/hukagawa/bookmarker/src/Controller/AppController.php:30)
+#0 /Users/hukagawa/bookmarker/src/Controller/UsersController.php(119): App\Controller\AppController->initialize()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(270): App\Controller\UsersController->initialize()
+#2 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(47): ReflectionClass->newInstance(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#22 {main}
+Request URL: /users
+
+
+2020-09-03 06:46:50 Warning: Warning (512): Unable to emit headers. Headers sent in file=/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php line=855 in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 53]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 53
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 154]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 154
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 59
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:46:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Debugger.php:855) in [/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 183]
+Request URL: /users
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 183
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 60
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 140
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 06:57:03 Error: aa
+2020-09-03 06:57:27 Error: bb
+2020-09-03 06:57:27 Error: aa
+2020-09-03 06:57:27 Error: bb
+2020-09-03 07:01:25 Error: bb
+2020-09-03 07:01:25 Error: 2
+2020-09-03 07:01:25 Error: bb
+2020-09-03 07:03:29 Error: bb
+2020-09-03 07:03:29 Error: [ArgumentCountError] Too few arguments to function Cake\Http\ServerRequest::getParam(), 0 passed in /Users/hukagawa/bookmarker/src/Controller/BookmarksController.php on line 144 and at least 1 expected (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ServerRequest.php:2180)
+#0 /Users/hukagawa/bookmarker/src/Controller/BookmarksController.php(144): Cake\Http\ServerRequest->getParam()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Auth/ControllerAuthorize.php(92): App\Controller\BookmarksController->isAuthorized(Array)
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(542): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(328): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(277): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Event/EventManager.php(351): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Event/EventManager.php(328): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(112): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(677): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BookmarksController))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#28 {main}
+Request URL: /bookmarks/view/1
+Referer URL: http://localhost:8765/bookmarks/
+
+
+2020-09-03 07:03:31 Error: bb
+2020-09-03 07:04:22 Error: Array
+(
+    [0] => 2
+)
+
+2020-09-03 07:09:12 Error: Array
+(
+    [0] => 1
+)
+
+2020-09-03 07:09:13 Error: Array
+(
+    [0] => 2
+)
+
+2020-09-03 07:09:14 Error: Array
+(
+    [0] => 3
+)
+
+2020-09-03 07:09:15 Error: Array
+(
+    [0] => 4
+)
+
+2020-09-03 07:10:57 Error: Array
+(
+    [0] => 1
+)
+
+2020-09-03 07:10:57 Error: 4
+2020-09-03 07:10:58 Error: Array
+(
+    [0] => 2
+)
+
+2020-09-03 07:10:58 Error: 4
+2020-09-03 07:10:59 Error: Array
+(
+    [0] => 3
+)
+
+2020-09-03 07:10:59 Error: 4
+2020-09-03 07:11:00 Error: Array
+(
+    [0] => 4
+)
+
+2020-09-03 07:11:00 Error: 4
+2020-09-03 07:12:51 Error: Array
+(
+    [0] => 1
+)
+
+2020-09-03 07:12:51 Error: 4
+2020-09-03 07:12:51 Error: 
+2020-09-03 07:12:52 Error: Array
+(
+    [0] => 2
+)
+
+2020-09-03 07:12:52 Error: 4
+2020-09-03 07:12:52 Error: 
+2020-09-03 07:12:53 Error: Array
+(
+    [0] => 3
+)
+
+2020-09-03 07:12:53 Error: 4
+2020-09-03 07:12:53 Error: 
+2020-09-03 07:12:54 Error: Array
+(
+    [0] => 4
+)
+
+2020-09-03 07:12:54 Error: 4
+2020-09-03 07:12:54 Error: 
+2020-09-03 07:14:27 Error: Array
+(
+    [0] => 1
+)
+
+2020-09-03 07:14:27 Error: 4
+2020-09-03 07:14:27 Error: 
+2020-09-03 07:14:29 Error: Array
+(
+    [0] => 2
+)
+
+2020-09-03 07:14:29 Error: 4
+2020-09-03 07:14:29 Error: 
+2020-09-03 07:14:30 Error: Array
+(
+    [0] => 3
+)
+
+2020-09-03 07:14:30 Error: 4
+2020-09-03 07:14:30 Error: 
+2020-09-03 07:14:31 Error: Array
+(
+    [0] => 4
+)
+
+2020-09-03 07:14:31 Error: 4
+2020-09-03 07:14:31 Error: 
+2020-09-03 07:15:28 Error: 4
+2020-09-03 07:15:28 Error: 1
+2020-09-03 07:15:30 Error: 4
+2020-09-03 07:15:30 Error: 2
+2020-09-03 07:15:31 Error: 4
+2020-09-03 07:15:31 Error: 2
+2020-09-03 07:15:32 Error: 4
+2020-09-03 07:15:32 Error: 5
+2020-09-03 07:16:30 Error: 5
+2020-09-03 07:16:30 Error: 5
+2020-09-03 07:29:04 Error: [Cake\Controller\Exception\MissingActionException] Action BookmarksController::小説() could not be found, or is not accessible. (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'BookmarksController',
+  'action' => '小説',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BookmarksController))
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /bookmarks/小説
+
+
+2020-09-03 09:27:35 Warning: Warning (2): log() expects parameter 1 to be float, array given in [/Users/hukagawa/bookmarker/src/Controller/UsersController.php, line 109]
+Request URL: /users/login?redirect=%2Fbookmarks
+Referer URL: http://localhost:8765/users/login?redirect=%2Fbookmarks
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+log - [internal], line ??
+App\Controller\UsersController::login() - APP/Controller/UsersController.php, line 109
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 606
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 256
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE/src/Http/Middleware/CsrfProtectionMiddleware.php, line 124
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 170
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 09:27:35 Error: [Error] Object of class App\Controller\UsersController could not be converted to string (/Users/hukagawa/bookmarker/src/Controller/UsersController.php:109)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(606): App\Controller\UsersController->login()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /users/login?redirect=%2Fbookmarks
+Referer URL: http://localhost:8765/users/login?redirect=%2Fbookmarks
+
+
+2020-09-03 09:27:46 Error: [Error] Object of class App\Controller\UsersController could not be converted to string (/Users/hukagawa/bookmarker/src/Controller/UsersController.php:109)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(606): App\Controller\UsersController->login()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /users/login?redirect=%2Fbookmarks
+Referer URL: http://localhost:8765/users/login?redirect=%2Fbookmarks
+
+
+2020-09-03 09:30:05 Warning: Warning (2): log() expects parameter 1 to be float, string given in [/Users/hukagawa/bookmarker/src/Controller/UsersController.php, line 109]
+Request URL: /users/login?redirect=%2Fbookmarks
+Referer URL: http://localhost:8765/users/login?redirect=%2Fbookmarks
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 168
+Cake\Core\BasePlugin::{closure}() - ROOT/vendor/cakephp/debug_kit/config/bootstrap.php, line 43
+log - [internal], line ??
+App\Controller\UsersController::login() - APP/Controller/UsersController.php, line 109
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 606
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 256
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE/src/Http/Middleware/CsrfProtectionMiddleware.php, line 124
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 170
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 97
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2020-09-03 09:30:05 Error: [Error] Object of class App\Controller\UsersController could not be converted to string (/Users/hukagawa/bookmarker/src/Controller/UsersController.php:109)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(606): App\Controller\UsersController->login()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /users/login?redirect=%2Fbookmarks
+Referer URL: http://localhost:8765/users/login?redirect=%2Fbookmarks
+
+
+2020-09-03 09:30:53 Error: [Error] Object of class App\Controller\UsersController could not be converted to string (/Users/hukagawa/bookmarker/src/Controller/UsersController.php:110)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php(606): App\Controller\UsersController->login()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /users/login?redirect=%2Fbookmarks
+Referer URL: http://localhost:8765/users/login?redirect=%2Fbookmarks
+
+
+2020-09-07 05:18:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Articles could not be found. (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ControllerFactory.php:105)
+Exception Attributes: array (
+  'class' => 'Articles',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /articles
+
+
+2020-09-07 05:18:32 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::bookmarks() could not be found, or is not accessible. (/Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Controller/Controller.php:596)
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'bookmarks',
+  'prefix' => '',
+  'plugin' => false,
+)
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#1 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/BaseApplication.php(256): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php(124): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(170): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /Users/hukagawa/bookmarker/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Http/Server.php(97): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 /Users/hukagawa/bookmarker/webroot/index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /users/bookmarks
+
+

@@ -1,0 +1,7 @@
+2020-09-03 09:27:11 Error: [RuntimeException] Unknown command `cake s`. Run `cake --help` to get the list of valid commands. in /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 346
+Stack Trace:
+#0 /Users/hukagawa/bookmarker/vendor/cakephp/cakephp/src/Console/CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 's')
+#1 /Users/hukagawa/bookmarker/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
